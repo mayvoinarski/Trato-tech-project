@@ -2,6 +2,7 @@ import styles from './Navbar.module.scss';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 import classNames from 'classnames';
 import { RiShoppingCart2Line, RiShoppingCartFill } from 'react-icons/ri';
+import Search from 'components/Search';
 
 const iconeProps={
     color: 'white',
@@ -22,7 +23,7 @@ export default function Navbar () {
                 </div>
             </div>
             <div className={styles.busca}>
-
+                <Search />
             </div>
             <div className={styles.icones}>
                     <a href='/carrinho'>
