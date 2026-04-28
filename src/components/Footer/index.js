@@ -1,5 +1,5 @@
 import styles from './Footer.module.scss';
-import {FaFacebook, FaTwitter, FaInstagram} from 'react-icons';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const iconeProps = {
     color: 'white',

@@ -1,9 +1,9 @@
 import Navbar from "components/Navbar";
-import styles from "./Principal.module.scss";
+import styles from "./PaginaPadrao.module.scss";
 import { Outlet } from "react-router-dom";
 import Footer from "components/Footer";
 
-export default function Principal() {
+export default function PaginaPadrao() {
   return (
     <div className={styles.container}>
       <Navbar />
