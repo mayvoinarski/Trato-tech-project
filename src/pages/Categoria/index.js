@@ -1,14 +1,14 @@
 import Header from 'components/Header';
+import Item from '../../components/item';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import styles from './Categoria.module.scss';
-import Item from 'components/item';
 
 export default function Categoria() {
   const { nomeCategoria } = useParams();
-  const { categoria, itens } = useSelector(state => ({ 
-      categoria: state.categorias.find(categoria => categoria.id === nomeCategoria),
-      itens: state.itens.filter(item => item.categoria === nomeCategoria) 
+  const { categoria, itens } = useSelector(state => ({
+    categoria: state.categorias.find(categoria => categoria.id === nomeCategoria),
+    itens: state.itens.filter(item => item.categoria === nomeCategoria),
   }));
 
   return (
