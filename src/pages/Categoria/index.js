@@ -1,5 +1,5 @@
 import Header from 'components/Header';
-import Item from '../../components/item';
+import Item from '../../components/Item';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import styles from './Categoria.module.scss';
